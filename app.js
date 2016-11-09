@@ -4,6 +4,7 @@
 
 
 const Server = require('./server.js')
+const path = require('path')
 const port = (process.env.PORT || 8080)
 const app = Server.app()
 
@@ -121,6 +122,9 @@ app.post('/deltodo', function(req, res){
     delTodo(req.body.id)
     res.send('all OK')
 });
+
+const indexPath = path.join(__dirname, 'index.html')
+app.get('/*', function (_, res) { res.sendFile(indexPath) })
 
 /*app.get(/.*!/, function(req, res) {
     res.sendFile( __dirname + '/index.html')
