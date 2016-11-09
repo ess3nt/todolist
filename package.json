@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
-    "heroku-postbuild": "node app.js"
+    "heroku-postbuild": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors"
   },
   "author": "Igor Poltavets",
   "devDependencies": {
