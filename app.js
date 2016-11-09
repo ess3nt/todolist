@@ -122,9 +122,9 @@ app.post('/deltodo', function(req, res){
     res.send('all OK')
 });
 
-app.get(/.*/, function(req, res) {
+/*app.get(/.*!/, function(req, res) {
     res.sendFile( __dirname + '/index.html')
-})
+})*/
 
 
 
