@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
         <div>
-            <h2>TodoList by Igor</h2>
+            <h2>TodoList2 by Igor</h2>
             <AddTodo />
             <ListOfTodo />
             <Filter />
